@@ -1,0 +1,170 @@
+body {
+  background-color: #5b616a;
+  text-align: center;
+  padding: 40px;
+}
+
+.bible-scripture-card {
+  background-color: #fcf7f8;
+  max-width: calc(23% + 10em);
+  max-height: calc(23% + 10em);
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 40px;
+  box-shadow: 2px 4px 2.5px 1px #484d54;
+}
+
+.bible-scripture-card:hover {
+  background-color: #aba9c3;
+  transform: scale(1.1);
+  transition: background-color 0.4s, transform 0.4s ease;
+}
+
+.bible-scripture-card:hover p {
+  color: #001219;
+  transform: scale(1.1);
+  transition: background-color 0.4s, color 0.4s, transform 0.4s ease;
+}
+
+.bible-scripture-card:hover a {
+  color: #001219;
+  transition: color 0.4s, ease;
+}
+
+h1 {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
+#vs-text {
+  margin: 0px 5px;
+}
+
+.bible-scripture-card p {
+  font-size: 1.5em;
+}
+
+p,
+a {
+  color: #6c757d;
+  display: inline-block;
+  font-family: "Afacad Flux", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+#negative-emotions-text {
+  color: red;
+  margin: 0px auto;
+}
+
+#Gods-Word-text {
+  color: green;
+  margin: 0px auto;
+}
+
+#description {
+  font-size: 1.5em;
+  display: block;
+  margin: 30px auto;
+}
+
+.emotion-buttons,
+.emotion-buttons-2,
+.emotion-buttons-3,
+.emotion-buttons-4 {
+  display: inline;
+  margin: 20px, auto;
+  text-align: center;
+  width: calc(100% + 0px);
+  max-width: calc(100% + 200px);
+  min-width: 1%;
+}
+
+.emotion-buttons a,
+.emotion-buttons-2 a,
+.emotion-buttons-2 a,
+.emotion-buttons-3 a,
+.emotion-buttons-4 a {
+  display: inline-block;
+  border: 1px solid;
+  text-align: center;
+  background-color: #9d0208;
+  color: #fcf7f8;
+  margin: 5px auto;
+  padding: 15px 20px;
+  max-width: calc(23% + 10em);
+  min-width: 1%;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.3em;
+  box-shadow: 2px 4px 8px #370617;
+}
+
+a:hover {
+  background-color: #6a040f;
+  transform: scale(0.9);
+}
+
+a:active {
+  background-color: #9d0208;
+}
+
+/* Below is Gods-Word section */
+
+#anger-section,
+#fear-section,
+#sadness-section,
+#jealousy-section,
+#envy-section,
+#hatred-section,
+#pride-section,
+#shame-section,
+#bitterness-section,
+#anxiety-section,
+#despair-section,
+#guilt-section,
+#lust-section {
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: rgba(0, 48, 73, 0.5);
+  width: calc(50% + 1em);
+  max-width: calc(23% + 10em);
+  max-height: calc(23% + 10em);
+  display: none;
+}
+
+.scripture-h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.scripture-p {
+  font-size: 1.5em;
+  color: #f5f5dc;
+  box-shadow: 2px 2px 4px black;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+#anger-section:target,
+#fear-section:target,
+#sadness-section:target,
+#jealousy-section:target,
+#envy-section:target,
+#hatred-section:target,
+#pride-section:target,
+#shame-section:target,
+#bitterness-section:target,
+#anxiety-section:target,
+#despair-section:target,
+#guilt-section:target,
+#lust-section:target {
+  display: block;
+}
