@@ -8,138 +8,135 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Rubik+Beastly&display=swap"
       rel="stylesheet"
     />
+    <title>Good vs evil</title>
   </head>
 
   <body>
     <div class="bible-scripture-card">
-      <h1>
-        <strong id="negative-emotions-text">Negative Emotions</strong>
-        <p id="vs-text">Vs.</p>
-        <strong id="Gods-Word-text">Gods Word</strong>
-      </h1>
-      <p id="description">
-        Click on a negative emotion to combat it with Gods Word.
-      </p>
-      <!-- anger, fear, sadness, jealousy, envy, hatred, pride, shame, bitterness, anxiety, despair, guilt, and lust -->
-      <div class="emotion-buttons">
-        <a id="anger" href="#anger-section">Anger</a>
-        <a id="fear" href="#fear-section">Fear</a>
-        <a href="#sadness-section">Sadness</a>
+      <section id="anger-counter">
+        <h1 class="scripture-h1">James 1:19-20</h1>
+        <p class="scripture-p">
+          Let every man be swift to hear, slow to speak, slow to wrath; for the
+          wrath of man does not produce the righteousness of God.
+        </p>
+      </section>
+      <section id="fear-counter">
+        <h1 class="scripture-h1">Isaiah 41:10</h1>
+        <p class="scripture-p">
+          Fear not, for I am with you; Be not dismayed, for I am your God. I
+          will strengthen you, Yes, I will help you, I will uphold you with My
+          righteous right hand.
+        </p>
+      </section>
+      <section id="sadness-counter">
+        <h1 class="scripture-h1">Matthew 11:28-30</h1>
+        <p class="scripture-p">
+          Come to Me, all you who labor and are heavy laden, and I will give you
+          rest. Take My yoke upon you and learn from Me, for I am gentle and
+          lowly in heart, and you will find rest for your souls. For My yoke is
+          easy and My burden is light.
+        </p>
+      </section>
+      <section id="jealousy-counter">
+        <h1 class="scripture-h1">Song of Solomon 8:6</h1>
+        <p class="scripture-p">
+          For love is as strong as death, Jealousy as cruel as the grave; Its
+          flames are flames of fire, A most vehement flame.
+        </p>
+      </section>
+      <section id="envy-counter">
+        <h1 class="scripture-h1">Proverbs 14:30</h1>
+        <p class="scripture-p">
+          A sound heart is life to the body, But envy is rottenness to the
+          bones.
+        </p>
+      </section>
+      <section id="hatred-counter">
+        <h1 class="scripture-h1">Proverbs 10:18</h1>
+        <p class="scripture-p">
+          Hatred stirs up conflict, but love covers over all wrongs.
+        </p>
+      </section>
+      <section id="pride-counter">
+        <h1 class="scripture-h1">Proverbs 29:23</h1>
+        <p class="scripture-p">
+          A man's pride will bring him low, But the humble in spirit will retain
+          honor.
+        </p>
+      </section>
+      <section id="shame-counter">
+        <h1 class="scripture-h1">Romans 10:11</h1>
+        <p class="scripture-p">
+          For the Scripture says, “Whoever believes on Him (Jesus Christ) will
+          not be put to shame.”
+        </p>
+      </section>
+      <section id="bitterness-counter">
+        <h1 class="scripture-h1">Ephesians 4:31-32</h1>
+        <p class="scripture-p">
+          Let all bitterness, wrath, anger, clamor, and evil speaking be put
+          away from you, with all malice. And be kind to one another,
+          tenderhearted, forgiving one another, even as God in Christ forgave
+          you.
+        </p>
+      </section>
+      <section id="anxiety-counter">
+        <h1 class="scripture-h1">Philippians 4:6-7</h1>
+        <p class="scripture-p">
+          Be anxious for nothing, but in everything by prayer and supplication,
+          with thanksgiving, let your requests be made known to God; and the
+          peace of God, which surpasses all understanding, will guard your
+          hearts and minds through Christ Jesus.
+        </p>
+      </section>
+      <section id="despair-counter">
+        <h1 class="scripture-h1">2 Corinthians 4:8-9</h1>
+        <p class="scripture-p">
+          We are hard-pressed on every side, yet not crushed; we are perplexed,
+          but not in despair; persecuted, but not forsaken; struck down, but not
+          destroyed.
+        </p>
+      </section>
+      <section id="guilt-counter">
+        <h1 class="scripture-h1">1 John 1:9</h1>
+        <p class="scripture-p">
+          If we confess our sins, He is faithful and just to forgive us our sins
+          and to cleanse us from all unrighteousness.
+        </p>
+      </section>
+      <section id="lust-counter">
+        <h1 class="scripture-h1">1 Corinthians 6:18</h1>
+        <p class="scripture-p">
+          Flee sexual immorality. Every sin that a man does is outside the body,
+          but he who commits sexual immorality sins against his own body.
+        </p>
+      </section>
+      <!-- 
+        Separation 
+-->
+      <div id="emotion-buttons">
+        <a id="anger" href="#anger-counter">Anger</a>
+        <a id="fear" href="#fear-counter">Fear</a>
+        <a href="#sadness-counter">Sadness</a>
       </div>
-      <div class="emotion-buttons-2">
-        <a id="envy" href="#envy-section">Envy</a>
-        <a id="hatred" href="#hatred-section">Hatred</a>
-        <a id="bitterness" href="#bitterness-section">Bitterness</a>
+      <div id="emotion-buttons-2">
+        <a id="envy" href="#envy-counter">Envy</a>
+        <a id="hatred" href="#hatred-counter">Hatred</a>
+        <a id="bitterness" href="#bitterness-counter">Bitterness</a>
       </div>
-      <div class="emotion-buttons-3">
-        <a id="pride" href="#pride-section">Pride</a>
-        <a id="lust" href="#lust-section">Lust</a>
-        <a id="anxiety" href="#anxiety-section">Anxiety</a>
+      <div id="emotion-buttons-3">
+        <a id="pride" href="#pride-counter">Pride</a>
+        <a id="lust" href="#lust-counter">Lust</a>
+        <a id="anxiety" href="#anxiety-counter">Anxiety</a>
       </div>
-      <div class="emotion-buttons-4">
-        <a id="shame" href="#shame-section">Shame</a>
-        <a id="despair" href="#despair-section">Despair</a>
-        <a id="guilt" href="#guilt-section">Guilt</a>
+      <div id="emotion-buttons-4">
+        <a id="shame" href="#shame-counter">Shame</a>
+        <a id="despair" href="#despair-counter">Despair</a>
+        <a id="guilt" href="#guilt-counter">Guilt</a>
       </div>
     </div>
-    <section id="anger-section">
-      <h1 class="scripture-h1">James 1:19-20</h1>
-      <p class="scripture-p">
-        Let every man be swift to hear, slow to speak, slow to wrath; for the
-        wrath of man does not produce the righteousness of God.
-      </p>
-    </section>
-    <section id="fear-section">
-      <h1 class="scripture-h1">Isaiah 41:10</h1>
-      <p class="scripture-p">
-        Fear not, for I am with you; Be not dismayed, for I am your God. I will
-        strengthen you, Yes, I will help you, I will uphold you with My
-        righteous right hand.
-      </p>
-    </section>
-    <section id="sadness-section">
-      <h1 class="scripture-h1">Matthew 11:28-30</h1>
-      <p class="scripture-p">
-        Come to Me, all you who labor and are heavy laden, and I will give you
-        rest. Take My yoke upon you and learn from Me, for I am gentle and lowly
-        in heart, and you will find rest for your souls. For My yoke is easy and
-        My burden is light.
-      </p>
-    </section>
-    <section id="jealousy-section">
-      <h1 class="scripture-h1">Song of Solomon 8:6</h1>
-      <p class="scripture-p">
-        For love is as strong as death, Jealousy as cruel as the grave; Its
-        flames are flames of fire, A most vehement flame.
-      </p>
-    </section>
-    <section id="envy-section">
-      <h1 class="scripture-h1">Proverbs 14:30</h1>
-      <p class="scripture-p">
-        A sound heart is life to the body, But envy is rottenness to the bones.
-      </p>
-    </section>
-    <section id="hatred-section">
-      <h1 class="scripture-h1">Proverbs 10:18</h1>
-      <p class="scripture-p">
-        Hatred stirs up conflict, but love covers over all wrongs.
-      </p>
-    </section>
-    <section id="pride-section">
-      <h1 class="scripture-h1">Proverbs 29:23</h1>
-      <p class="scripture-p">
-        A man's pride will bring him low, But the humble in spirit will retain
-        honor.
-      </p>
-    </section>
-    <section id="shame-section">
-      <h1 class="scripture-h1">Romans 10:11</h1>
-      <p class="scripture-p">
-        For the Scripture says, “Whoever believes on Him (Jesus Christ) will not
-        be put to shame.”
-      </p>
-    </section>
-    <section id="bitterness-section">
-      <h1 class="scripture-h1">Ephesians 4:31-32</h1>
-      <p class="scripture-p">
-        Let all bitterness, wrath, anger, clamor, and evil speaking be put away
-        from you, with all malice. And be kind to one another, tenderhearted,
-        forgiving one another, even as God in Christ forgave you.
-      </p>
-    </section>
-    <section id="anxiety-section">
-      <h1 class="scripture-h1">Philippians 4:6-7</h1>
-      <p class="scripture-p">
-        Be anxious for nothing, but in everything by prayer and supplication,
-        with thanksgiving, let your requests be made known to God; and the peace
-        of God, which surpasses all understanding, will guard your hearts and
-        minds through Christ Jesus.
-      </p>
-    </section>
-    <section id="despair-section">
-      <h1 class="scripture-h1">2 Corinthians 4:8-9</h1>
-      <p class="scripture-p">
-        We are hard-pressed on every side, yet not crushed; we are perplexed,
-        but not in despair; persecuted, but not forsaken; struck down, but not
-        destroyed.
-      </p>
-    </section>
-    <section id="guilt-section">
-      <h1 class="scripture-h1">1 John 1:9</h1>
-      <p class="scripture-p">
-        If we confess our sins, He is faithful and just to forgive us our sins
-        and to cleanse us from all unrighteousness.
-      </p>
-    </section>
-    <section id="lust-section">
-      <h1 class="scripture-h1">1 Corinthians 6:18</h1>
-      <p class="scripture-p">
-        Flee sexual immorality. Every sin that a man does is outside the body,
-        but he who commits sexual immorality sins against his own body.
-      </p>
-    </section>
   </body>
 </html>
