@@ -1,25 +1,43 @@
 body {
-  background-color: gray;
+  background-color: #5b616a;
   text-align: center;
   padding: 40px;
 }
 
 .bible-scripture-card {
-  background-color: gray;
+  background-color: #fcf7f8;
   max-width: calc(23% + 10em);
   max-height: calc(23% + 10em);
   border-radius: 10px;
   margin: 0 auto;
   padding: 40px;
-  box-shadow: 2px 4px 2.5px 1px #484d54;
+  box-shadow: 2px 4px 2.5px 1.5px #484d54;
+}
+
+.bible-scripture-card:hover {
+  background-color: #aba9c3;
+  transform: scale(1.1);
+  transition: background-color 0.4s, transform 0.4s ease;
+}
+
+.bible-scripture-card:hover p {
+  color: #001219;
+  transform: scale(1.1);
+  transition: background-color 0.4s, color 0.4s, transform 0.4s ease;
+}
+
+.bible-scripture-card:hover a {
+  color: #001219;
+  transition: color 0.4s, ease;
 }
 
 h1,
-.bible-scripture-card {
-  font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
+h2 {
+  font-family: "Poppins", serif;
   font-weight: 800;
   font-style: normal;
+  font-size: 2rem;
+  margin: 0 auto;
 }
 
 #vs-text {
@@ -32,7 +50,7 @@ h1,
 
 p,
 a {
-  color: gray;
+  color: #6c757d;
   display: inline-block;
   font-family: "Afacad Flux", serif;
   font-optical-sizing: auto;
@@ -41,30 +59,47 @@ a {
   font-variation-settings: "slnt" 0;
 }
 
-#emotion-buttons,
-#emotion-buttons-2,
-#emotion-buttons-3,
-#emotion-buttons-4 {
+#negative-emotions-text {
+  color: red;
+  margin: 0px auto;
+}
+
+#Gods-Word-text {
+  color: green;
+  margin: 0px auto;
+  font-size: 2.5rem;
+}
+
+#description {
+  font-size: 1.5em;
+  display: block;
+  margin: 30px auto;
+}
+
+.emotion-buttons,
+.emotion-buttons-2,
+.emotion-buttons-3,
+.emotion-buttons-4 {
   display: inline;
   margin: 20px, auto;
   text-align: center;
-  width: calc(20% + 0px);
+  width: calc(100% + 0px);
   max-width: calc(100% + 200px);
   min-width: 1%;
 }
 
-#emotion-buttons a,
-#emotion-buttons-2 a,
-#emotion-buttons-2 a,
-#emotion-buttons-3 a,
-#emotion-buttons-4 a {
+.emotion-buttons a,
+.emotion-buttons-2 a,
+.emotion-buttons-2 a,
+.emotion-buttons-3 a,
+.emotion-buttons-4 a {
   display: inline-block;
   border: 1px solid;
   text-align: center;
   background-color: #9d0208;
-  color: #000000;
+  color: #fcf7f8;
   margin: 5px auto;
-  padding: 5px 10px;
+  padding: 15px 20px;
   width: calc(1% + 3.5em);
   max-width: calc(1% + 5em);
   min-width: 1%;
@@ -75,6 +110,7 @@ a {
 
 a:hover {
   background-color: #6a040f;
+  color: black;
   transform: scale(0.9);
 }
 
@@ -82,77 +118,61 @@ a:active {
   background-color: #9d0208;
 }
 
+a:hover {
+  background-color: #6a040f;
+  transform: scale(0.9);
+}
+
 /* Below is Gods-Word section */
 
-#anger-counter,
-#fear-counter,
-#sadness-counter,
-#jealousy-counter,
-#envy-counter,
-#hatred-counter,
-#pride-counter,
-#shame-counter,
-#bitterness-counter,
-#anxiety-counter,
-#despair-counter,
-#guilt-counter,
-#lust-counter {
-  margin-top: 0px;
-  margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
+#anger-section,
+#fear-section,
+#sadness-section,
+#jealousy-section,
+#envy-section,
+#hatred-section,
+#pride-section,
+#shame-section,
+#bitterness-section,
+#anxiety-section,
+#despair-section,
+#guilt-section,
+#lust-section {
+  margin: 40px auto;
   padding: 40px;
-  border-radius: 0px;
-  width: calc(80% + 1em);
-  max-width: calc(80% + 10em);
+  border-radius: 10px;
+  background-color: rgba(0, 48, 73, 0.5);
+  width: calc(50% + 1em);
+  max-width: calc(23% + 10em);
   max-height: calc(23% + 10em);
   display: none;
 }
 
 .scripture-h1 {
   font-size: 2.5rem;
-  color: hsl(0, 100%, 100%);
-  margin: 0px auto;
+  color: #ffffff;
 }
 
 .scripture-p {
   font-size: 1.5em;
-  color: hsl(0, 100%, 100%);
-  box-shadow: 2px 2px 50px 20px hsl(56, 100%, 100%);
-  border: 2px solid white;
-  border-radius: 0px;
+  color: #f5f5dc;
+  box-shadow: 2px 2px 14px 1px hsl(0, 0%, 0%);
+  border-radius: 10px;
   padding: 30px;
 }
 
-#anger-counter:target,
-#fear-counter:target,
-#sadness-counter:target,
-#jealousy-counter:target,
-#envy-counter:target,
-#hatred-counter:target,
-#pride-counter:target,
-#shame-counter:target,
-#bitterness-counter:target,
-#anxiety-counter:target,
-#despair-counter:target,
-#guilt-counter:target,
-#lust-counter:target {
+#anger-section:target,
+#fear-section:target,
+#sadness-section:target,
+#jealousy-section:target,
+#envy-section:target,
+#hatred-section:target,
+#pride-section:target,
+#shame-section:target,
+#bitterness-section:target,
+#anxiety-section:target,
+#despair-section:target,
+#guilt-section:target,
+#lust-section:target {
   display: block;
-}
-
-#anger-counter:hover,
-#fear-counter:hover,
-#sadness-counter:hover,
-#jealousy-counter:hover,
-#envy-counter:hover,
-#hatred-counter:hover,
-#pride-counter:hover,
-#shame-counter:hover,
-#bitterness-counter:hover,
-#anxiety-counter:hover,
-#despair-counter:hover,
-#guilt-counter:hover,
-#lust-counter:hover {
-  transform: scale(1.1);
-  transition: transform 0.4s ease;
 }
