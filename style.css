@@ -98,12 +98,22 @@ a {
   color: #fcf7f8;
   margin: 5px auto;
   padding: 15px 20px;
-  max-width: calc(23% + 10em);
+  width: calc(1% + 3.5em);
+  max-width: calc(1% + 5em);
   min-width: 1%;
   border-radius: 5px;
   text-decoration: none;
   font-size: 1.3em;
   box-shadow: 2px 4px 8px #370617;
+}
+
+a:hover {
+  background-color: #6a040f;
+  transform: scale(0.9);
+}
+
+a:active {
+  background-color: #9d0208;
 }
 
 a:hover {
