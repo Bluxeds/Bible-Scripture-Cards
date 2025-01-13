@@ -1,10 +1,10 @@
 # Bible Scripture Cards
 
-![](demo/Bible-Scripture-Card-Demo-Picture.png)
+![Gods Word Vs  Negative Emotions Demo Pic](https://github.com/user-attachments/assets/35dfc770-2afe-45e1-9e19-81249c289527)
 
 
 
-https://github.com/user-attachments/assets/950bc082-6241-49aa-8658-7da28a549f31
 
 
+https://github.com/user-attachments/assets/5be4241d-87ca-4ad1-9647-f0ef9dc34990
 
